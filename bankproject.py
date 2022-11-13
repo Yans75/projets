@@ -201,7 +201,7 @@ if page == 'Modélisation':
     
     st.title('Modélisation')
     st.image('image6.jpg')
-    selectbox1 = st.selectbox('Choix du modèle', ('DecisionTreeClassifier', 'RandomForestClassifier', 'AdaBoostClassifier'))
+    selectbox1 = st.selectbox('Choix du modèle', ('DecisionTreeClassifier', 'RandomForestClassifier', 'SVM (Support Vector Machine)'))
 
     if selectbox1=='DecisionTreeClassifier':
         st.title('DecisionTreeClassifier')
@@ -248,8 +248,8 @@ if page == 'Modélisation':
                 st.write(grid_clf.best_params_)
        
         
-    if selectbox1=='AdaBoostClassifier':
-        st.title('AdaBoostClassifier')
+    if selectbox1=='SVM (Support Vector Machine)':
+        st.title('SVM (Support Vector Machine)')
         
 
         ac = load('adc.joblib') 
