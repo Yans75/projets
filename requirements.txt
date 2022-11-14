@@ -5,5 +5,7 @@ seaborn
 
 streamlit
 joblib
-sklearn
-
+sklearn.ensemble
+sklearn.tree
+DecisionTreeClassifier
+RandomForestClassifier
