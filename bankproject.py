@@ -76,7 +76,7 @@ if page == 'Dataviz':
 
     st.image('image5.jpg')
     graphique = ["Visualisation des différentes variables catégorielles", "Countplots des variables catégorielles en fonction de la variable « deposit »", 
-                 "Analyse des valeurs aberrantes" ]
+                 "Analyse des valeurs aberrantes", "Analyse de la variable cible" ]
     radio2 = st.radio("Visualisation des données", graphique)
     if radio2=="Visualisation des différentes variables catégorielles":
         st.subheader("Visualisation des variables catégorielles")
@@ -164,7 +164,12 @@ if page == 'Dataviz':
         
         st.write("On constate que les variables **age**, **balance**, **duration**, **campaign**, **pdays** et **previous** ont bien des valeurs aberrantes qu’on va devoir traiter dans la partie suivante.")
         
-        
+        if radio2=="Analyse de la variable cible":
+              fig=plt.figure()
+              st.subheader("Analyse de la variable cible")
+              sns.countplot(x="deposit",data=df);
+              st.pyplot(fig)
+              st.write("On observe légèrement plus de refus que de souscription pour le produit proposé")
         
         
         
