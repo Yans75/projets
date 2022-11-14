@@ -7,5 +7,4 @@ streamlit
 joblib
 sklearn.ensemble
 sklearn.tree
-DecisionTreeClassifier
-RandomForestClassifier
+
