@@ -268,6 +268,7 @@ if page == 'Modélisation':
         
     if selectbox1=='SVM (Support Vector Machine)':
         st.title('SVM (Support Vector Machine)')
+        st.write("Le score du model est 0.47382580428203113")
         
 
         ac = load('adc.joblib') 
