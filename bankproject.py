@@ -164,12 +164,14 @@ if page == 'Dataviz':
         
         st.write("On constate que les variables **age**, **balance**, **duration**, **campaign**, **pdays** et **previous** ont bien des valeurs aberrantes qu’on va devoir traiter dans la partie suivante.")
         
-        if radio2=="Analyse de la variable cible":
-              fig5=plt.figure()
-              st.subheader("Analyse de la variable cible")
-              sns.countplot(x="deposit",data=df);
-              st.pyplot(fig5)
-              st.write("On observe légèrement plus de refus que de souscription pour le produit proposé")
+    if radio2=="Analyse de la variable cible":
+        
+        
+        fig5=plt.figure()
+        st.subheader("Analyse de la variable cible")
+        sns.countplot(x="deposit",data=df);
+        st.pyplot(fig5)
+        st.write("On observe légèrement plus de refus que de souscription pour le produit proposé")
         
         
         
