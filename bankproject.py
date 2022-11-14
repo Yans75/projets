@@ -275,7 +275,12 @@ if page == 'Modélisation':
         st.write("Le score du model est",ac.score(X_test, y_test))
         st.subheader('Matrice de confusion')
 
-        st.image('ac.jpg')
+        st.image('svm.jpg')
+        yk = st.checkbox("La meilleure combinaison de paramètres")
+        if yk :
+            st.image('best.jpg')
+            
+        
         
         
        
