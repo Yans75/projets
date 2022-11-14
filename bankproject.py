@@ -271,8 +271,7 @@ if page == 'Modélisation':
         st.write("Le score du model est 0.47382580428203113")
         
 
-        ac = load('adc.joblib') 
-        st.write("Le score du model est",ac.score(X_test, y_test))
+        
         st.subheader('Matrice de confusion')
 
         st.image('svm.jpg')
