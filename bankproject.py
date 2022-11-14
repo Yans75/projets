@@ -175,7 +175,7 @@ if page == 'Dataviz':
         
         
         
-        df1["deposit"]=df["deposit"].replace({"yes":1,"no":0})
+        df["deposit"]=df["deposit"].replace({"yes":1,"no":0})
         fig6=plt.figure(20, 20)
         fig6.title=st.label="Heatmap de correlation"
         st.subheader("Heatmap de correlation")
