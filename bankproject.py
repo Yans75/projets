@@ -223,7 +223,7 @@ if page == 'Modélisation':
 
     if selectbox1=='DecisionTreeClassifier':
         st.title('DecisionTreeClassifier')
-        from sklearn.tree import DecisionTreeClassifier
+        
         dt_clf = load('dtc.joblib')
         y_pred = dt_clf.predict(X_test)
         
