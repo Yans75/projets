@@ -179,7 +179,7 @@ if page == 'Dataviz':
         fig6=plt.figure()
         fig6.title=st.label="Heatmap de correlation"
         st.subheader("Heatmap de correlation")
-        sns.heatmap(df.corr(), annot = True,cmap='summer')
+        sns.heatmap(df.corr(), annot = True,cmap='blue')
         st.pyplot(fig6)
         st.write("L’observation de Heatmap de corrélation permet de constater que la variable la plus corrélée à la variable cible est la variable « duration » avec une corrélation de 0.45. ")
         st.write("On essaiera plus tard de discrétiser cette variable pour évaluer son impact sur les algorithmes de Machine Learning ")
